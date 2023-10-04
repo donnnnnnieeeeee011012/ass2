@@ -15,7 +15,7 @@
           "lookup": "properties.NAME",
           "from":{
             "data":{
-              "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/3179/main/Homework%202/data/2019.csv"
+              "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Homework_2/data/2019.csv"
             },
             "key": "Country",
             "fields": ["Score"]

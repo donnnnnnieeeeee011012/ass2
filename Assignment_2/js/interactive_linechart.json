@@ -7,7 +7,7 @@
   "layer":[
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Homework_3/data/Hapiness_score_changing.csv"
+        "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_score_changing.csv"
       },
      "transform": [
         {"filter": "datum.Country == 'Finland'|| datum.Country == 'Australia' || datum.Country == 'China'||datum.Country == 'New Zealand'||datum.Country == 'United Kingdom'||datum.Country == 'Singapore'||datum.Country == 'India'"}

@@ -18,14 +18,14 @@
               "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_score_changing.csv"
             },
             "key": "Country",
-            "fields": ["Score"]
+            "fields": ["score"]
           }
         }
       ],
       "mark":{"type": "geoshape","stroke":"white"},
       "encoding": {
         "color":{
-          "field": "Score",
+          "field": "score",
           "type": "quantitative",
           "scale": {"type":"linear","domain":[2,4,6,8]}
         },

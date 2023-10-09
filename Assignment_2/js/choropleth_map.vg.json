@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Median house price per suburb (2010-2020)",
+  "title": "World People's Hapiness Score in Each Country (2015 - 2019)",
   "width": 800,
   "height": 500,
   "params": [

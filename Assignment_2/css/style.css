@@ -1,35 +1,24 @@
 #choropleth_map {
-	top: auto;
-	bottom: 1000px; 
-	left: 500px;
-	right: 100px;
-	padding: 0 25px 0 25px
-	/*height: 1000px;
-	width: 800px;*/
+	margin-left: 15%;
 }
 
 #interactive_linechart {
-	top:auto;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	display: block;
 }
 
-.page {
-	height: fit-content;
-	width: 1500px;
-	background-color: white;
-	margin: auto;
-	padding: 50px;
-	padding-top: 35px;
-  }
-
   body {
-	background-color: lightgray;
+	background-color: rgb(245, 250, 255);
+	padding:5% 10% 10% 10%;
   }
 
   .vis-container {
 	width: 100%;
+  }
+
+  .description-right {
+	padding-left: 20px;
+  }
+
+  #sec-2{
+	margin-bottom: 50px;
   }

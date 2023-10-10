@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_components.csv"},
   "title":"People's Hapiness components assessment (2015 - 2019)",
-  "width":"container",
+  "width":1200,
+  "height":400,
   "mark": "bar",
   "params": [
     {

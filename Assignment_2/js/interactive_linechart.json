@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": 600,
   "height": 350,
   "title": "People's Hapiness score changing between 2015-2019",
   

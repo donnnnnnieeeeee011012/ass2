@@ -1,0 +1,63 @@
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_components.csv"},
+  "title":"People's Hapiness components assessment (2015 - 2019)",
+  "width":"container",
+  "mark": "bar",
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2017,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2019,
+        "step": 1,
+        "name": "Year:  "
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "value":null,
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "labels": [
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.value > 0"},
+    {"filter": "datum.year == Year_selection"},
+    {
+      "filter": "Continent_selection == null || datum.region == Continent_selection"
+    }
+  ],
+  "encoding": {
+    "y": {"aggregate": "sum", "field": "value","title":"Score of "},
+    "x": {"field": "Country"},
+    "color": {"field": "type","title":"Type of assessed criteria"},
+    "tooltip":[
+      {"field":"Country","type": "nominal"},
+      {"field":"type","type": "nominal"},
+      {"field":"value","type": "quantitative"}
+    ]
+  }
+}

@@ -1,5 +1,15 @@
 #choropleth_map {
 	top: auto;
+	bottom: 1000px; 
+	left: 500px;
+	right: 100px;
+	padding: 0 25px 0 25px
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#interactive_linechart {
+	top:auto;
 	bottom: 100px; 
 	left: 100px;
 	right: 100px;
@@ -7,11 +17,19 @@
 	width: 800px;*/
 }
 
-#interactive_linechart {
-	top:200px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
+.page {
+	height: fit-content;
+	width: 1500px;
+	background-color: white;
+	margin: auto;
+	padding: 50px;
+	padding-top: 35px;
+  }
+
+  body {
+	background-color: lightgray;
+  }
+
+  .vis-container {
+	width: 100%;
+  }

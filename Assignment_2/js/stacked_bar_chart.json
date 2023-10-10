@@ -3,7 +3,7 @@
   "data": {"url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_components.csv"},
   "title":"People's Hapiness components assessment (2015 - 2019)",
   "width":1200,
-  "height":300,
+  "height":400,
   "mark": "bar",
   "params": [
     {

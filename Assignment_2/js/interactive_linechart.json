@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 350,
+  "title": "People's Hapiness score changing between 2015-2019",
+  
+  "layer":[
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Homework_3/data/Hapiness_score_changing.csv"
+      },
+     "transform": [
+        {"filter": "datum.Country == 'Finland'|| datum.Country == 'Australia' || datum.Country == 'China'||datum.Country == 'New Zealand'||datum.Country == 'United Kingdom'||datum.Country == 'Singapore'||datum.Country == 'India'"}
+      ],
+      "mark":{
+        "type": "line",
+        "point":{
+          "filled":false,
+          "fill":"white"
+        }
+      },
+      "params": [{
+        "name": "Country",
+        "select": {"type": "point", "fields": ["Country"]},
+        "bind": "legend"
+      }],
+      "encoding": {
+        "x":{
+            "field":"year",
+            "type": "nominal",
+            "title":"Year"
+        },
+        "y":{
+            "field":"score",
+            "type": "quantitative",
+            "title":"Hapiness Score",
+            "axis":{"tickCount":5},
+            "scale":{"domain":[3,8]}
+        },
+        "color": {"field": "Country", "type": "nominal"},
+        "opacity": {
+        "condition": {"param": "Country", "value": 3},
+        "value": 0.2
+      },
+        "tooltip":[
+          {"field":"Country","type": "nominal"},
+          {"field":"year","type": "ordinal"},
+          {"field":"score","title":"People's Hapiness Score","type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Homework_3/data/Hapiness_score_changing.csv"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx":6,
+        "dy":7,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text":{"field":"Country","type": "nominal"},
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "score",
+          "type": "quantitative",
+          "title": "Happiness Score"
+        },
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum.Country == 'Australia'|| datum.Country == 'China'||datum.Country == 'Singapore'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
+} 
+  

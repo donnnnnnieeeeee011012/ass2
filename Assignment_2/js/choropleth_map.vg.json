@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "World People's Hapiness Score in Each Country (2015 - 2019)",
-  "width": 800,
-  "height": 500,
+  "width": 1200,
+  "height": 600,
   "params": [
     {
       "name": "Year_selection",

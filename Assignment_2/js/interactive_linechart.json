@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
-  "height": 350,
+  "height": 300,
   "title": "People's Hapiness score changing between 2015-2019",
   
   "layer":[
@@ -53,6 +53,9 @@
       "data": {
         "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Homework_3/data/Hapiness_score_changing.csv"
       },
+        "transform": [
+        {"filter": "datum.Country == 'Finland'|| datum.Country == 'Australia' || datum.Country == 'China'||datum.Country == 'New Zealand'||datum.Country == 'United Kingdom'||datum.Country == 'Singapore'||datum.Country == 'India'"}
+      ],
       "mark": {
         "type": "text",
         "align": "left",

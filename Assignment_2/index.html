@@ -7,132 +7,124 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
   
   
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+ 
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
   
 </head>
 <body>
-  <div>
-
+  <div id="page">
     <div>
+
       <div>
-        <h1>People's Life Expectancy and Hapiness</h1>
         <div>
+          <h1>People's Life Expectancy and Happiness</h1>
           <hr>
+          <p>During this visualization session, the data will mainly focus on People's Happiness and Life expectancy score, involving other factors like People's Freedom of making Life choice and GDP per capita in the year range 2015 - 2019.
+          </p>
+          
         </div>
-        
-        <p>This page demonstrates how you can use pure.css grid for your layout.</p>
-        
       </div>
-    </div>
 
-    <br>
-    <br>
-  
+      <br>
+
     
-    <div id="sec-1">
-      <div><h2>People Hapiness Score over the world (2015 - 2019)</div>
-      <div id="choropleth_map"></div>
-      <div>
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-          <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+      <h2>People's Happiness Score over the world (2015 - 2019)</h2>
+      <div id="sec-1">
+        <div id="choropleth_map"></div>
+        <div style="display: inline-block;"> 
+          <div style="max-width: 700px; float: left; padding-top: 30px;">
+            <p>Over the past few years, North and South America have consistently maintained high scores in the People's Happiness scores, which is counted globally. In Europe, Northern and Western Europe have high happiness scores, while Eastern Europe lags behind. East and South-East Asia follow in the middle of the world, but with the exception of North Africa, the rest of Africa has a relatively low happiness score. </p>
+          </div>
+          <div style="max-width: 700px; float: right; padding-left: 50px; padding-top: 30px;">
+            <p>It is worth noting that over the past few years, Oceania as a whole, including New Zealand and Australia, has shown a trend of high levels of People's Happiness Score and is consistently ranked in the top 30 in the world. </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+
+      <h2>Trends of selected representative countries in the world (2015 - 2019) </h2>
+      <div id="sec-2">
         
+        <div id="interactive_linechart"></div>
+        <div id="sec-2-1">
+          <p>Over the past few years (2015-2019), most of the countries represented in the Score of People's Happiness have shown a slight increase or remained stable, such as Finland, Australia, and New Zealand. It is worth noting that the British People Happiness Score has shown a slow decline after a rapid rise between 2017 and 2018. However, in the graph Singapore and India's National Happiness Score has been declining over the years. </p>
+        </div>
+      </div>
+      
+
+      <h2>People's Freedom, Expectancy along with GDP changing over the year (2015 - 2019)</h2>
+      <div id="sec-3">
+        <div id="range_dot_plot"></div>
+        <div id="sec-3-1">
+          
+          <p>In Figure 1 (2015-2019), the overall GDP per capita is more or less on the rise in several of the countries represented, and as a result, the Life Expectancy of the people in Figure 2 has risen, but some of the countries have seen a large increase in the Life Expectancy of their people even though their GDP per capita has risen slowly, e.g., Australia, Brazil, and Singapore. </p>
+            <p>In contrast, however, it is worth noting in Figure 3 that even though the country's overall economy is moving in the right direction, people's Freedom of making life choices scores are moving in the opposite direction, including in several of the countries just mentioned, as well as in the United States.</p>
+        </div>
+          
+      </div>
+
+
+      <h2>The Relation between GDP and People's Happiness Score</h2>
+      <div id="sec-4">
+        <div id="scatter_plot"></div>
+        <div id="sec-4-1">
+          <p>So broadly speaking, is it true that the higher the GDP per capita the higher the happiness score of the people? 
+          </p>
+          <p>The graph shows that most of the European countries have high GDP per capita, so people's happiness scores are generally high in most of the European countries, distributed above 5. The Americas as a whole are also not too far off from Europe. Asia has a more dispersed GDP per capita distribution with a wider range, however people's happiness scores are not particularly low, with most being above 4. It is worth noting that Somalia in Africa, despite having a very low GDP per capita, has very high people's happiness scores.</p>
+        </div>
+      </div>
+
+      <h2>People's Well-being Score Distribution (2015 - 2019)</h2>
+      <div id="sec-5">
+        <div id="stacked_bar_chart"></div>
+        <div id="sec-5-1">
+          <div style="max-width: 700px; float: left;">
+            <p>People's Well-being Score is calculated by the sum of life_expectancy (People Life expectancy) and freedom (People's freedom of making life choice), thus people's level of control their own lives are derived. </p>
+          </div>
+          <div style="max-width: 700px; float: right; padding-left: 50px; ">
+            <p>Similar to the results of the above sections, it remains that Europe and the Americas have higher people's well-being scores, Asia has a wider distribution, and Africa is relatively low. It is worth noting that Oceania has maintained a high people's well-being score over the five-year period. </p>
+          </div>
+        </div>
       </div>
     </div>
+
+
+
+    <script type="text/javascript">
+      var spec1 = "/js/choropleth_map.vg.json";
+      
+      var spec2 = "/js/interactive_linechart.json";
     
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div id="sec-2">
-      <div id="interactive_linechart"></div>
-      <div>
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-      </div>
-    </div>
+      var spec3 = "/js/range_dot_plot.json";
     
-    <div id="sec-3">
-      <div id="range_dot_plot"></div>
-      <div id="sec-3-1">
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-          <p>m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sap</p>
-      </div>
-        
-    </div>
-
-    <div id="sec-4">
-      <div id="scatter_plot"></div>
-      <div>
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-      </div>
-    </div>
-
-    <div id="sec-5">
-      <div id="stacked_bar_chart"></div>
-      <div>
-        <h2>Two Columns Layout</h2>
-        <p>The first column contains text and the second column contains a visualisation.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
-      </div>
-    </div>
+      var spec4 = "/js/scatter_plot.json";
     
-  
-
+      var spec5 = "/js/stacked_bar_chart.json";
+    
+    
+      vegaEmbed('#choropleth_map', spec1).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      vegaEmbed('#interactive_linechart', spec2).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      vegaEmbed('#range_dot_plot', spec3).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      vegaEmbed('#scatter_plot', spec4).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      vegaEmbed('#stacked_bar_chart', spec5).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+    </script>
   </div>
-
-
-
-  <script type="text/javascript">
-    var spec1 = "js/choropleth_map.vg.json";
-    
-    var spec2 = "js/interactive_linechart.json";
-  
-    var spec3 = "js/range_dot_plot.json";
-  
-    var spec4 = "js/scatter_plot.json";
-  
-    var spec5 = "js/stacked_bar_chart.json";
-  
-  
-    vegaEmbed('#choropleth_map', spec1).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-    vegaEmbed('#interactive_linechart', spec2).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-    vegaEmbed('#range_dot_plot', spec3).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-    vegaEmbed('#scatter_plot', spec4).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-    vegaEmbed('#stacked_bar_chart', spec5).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-  </script>
 </body>
 
 

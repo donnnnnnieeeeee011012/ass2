@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 600,
     "height": 600,
-    "title": "People's Hapiness Score and corresponding GDP per capita (2015 - 2019)",
+    "title": "People's Happiness Score and corresponding GDP per capita (2015 - 2019)",
     "data": {
       "url": "https://raw.githubusercontent.com/donnnnnnieeeeee011012/ass2/main/Assignment_2/data/Hapiness_gdp_distribution.csv"
     },
